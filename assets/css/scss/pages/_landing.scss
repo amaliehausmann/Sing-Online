@@ -1,0 +1,114 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/placeholders';
+@use '../helpers/variables' as *;
+@use '../components/header';
+
+main{
+    .hero{
+        @extend %gradientOne;
+        @extend %regularFont;
+
+        .logo{
+            width: 70%;
+            display: block;
+            margin: auto;
+            padding-top: 10vw;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 3vw;
+            color: $white;
+            font-weight: 300;
+        }
+
+        .sw{
+            width: 90%;
+            display: block;
+            margin: auto;
+            padding-bottom: 10vw;
+        }
+
+        }
+
+        .fun{
+            padding-top: 1vw;
+            padding-bottom: 8vw;
+            margin: auto;
+            @extend %gradientTwo;
+            color: $white;
+            h2{
+                @extend %heavyFont;
+                text-align: center;
+                font-size: 6vw;
+            }
+
+            h3{
+                text-align: center;
+                font-size: 4vw;
+                font-weight: 300;
+                margin-top: -3vw;
+                margin-bottom: 8vw
+            }
+
+            h3, h4{
+                @extend %regularFont;
+            }
+
+            .gridOne{
+                @include Grid(2 , 2, 2vw);
+                margin: 4vw 5vw;
+
+                h2{
+                    font-size: 5vw;
+                    margin-top: 0;
+                }
+
+                h3{
+                    font-size: 4vw;
+                    font-weight: 400;
+                    margin-top: -3vw;
+
+                }
+
+                img{
+                    width: 100%;
+                }
+
+                .stats{
+                    display: flex;
+                    width: 25vw;
+                    justify-content: space-between;
+                    margin: auto;
+                    margin-top: -10vw;
+                    img{
+                        width: 3vw;
+                        margin-left:-2vw;
+                    }
+
+                    h4{
+                        font-size: 4vw;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .buttonBox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            button{
+                background-color: transparent;
+                color: $white;
+                border: solid 2px $white;
+                border-radius: 5px;
+                padding: 1vw 3vw;
+                font-size: 4vw;
+                @extend %regularFont;
+                margin: auto;
+                display: block;
+            }
+        }
+    }

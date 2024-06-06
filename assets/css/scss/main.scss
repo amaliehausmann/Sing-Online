@@ -1,0 +1,20 @@
+@use './pages/landing';
+
+@font-face {
+    font-family: 'heavy';
+    src: url('../scss/fonts/P22\ Underground\ W01\ Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'normal';
+    src: url('../scss/fonts/P22\ Johnston\ Underground\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: auto;
+}
+

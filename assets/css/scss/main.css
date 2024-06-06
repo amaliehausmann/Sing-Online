@@ -1,0 +1,281 @@
+main .hero, main .fun h3, main .fun h4, main .fun button, header nav, header nav .headerlogo h2, header nav .login button {
+  font-family: "normal", serif;
+}
+
+main .fun h2 {
+  font-family: "heavy", serif;
+}
+
+main .hero {
+  background: rgb(54, 82, 215);
+  background: linear-gradient(106deg, rgb(54, 82, 215) 0%, rgb(114, 9, 183) 100%);
+}
+
+main .fun {
+  background: rgb(54, 82, 215);
+  background: linear-gradient(180deg, rgb(54, 82, 215) 0%, rgb(58, 12, 163) 70%);
+}
+
+header {
+  box-shadow: 0px 5px 5px 0px rgba(84, 84, 84, 0.75);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(84, 84, 84, 0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(84, 84, 84, 0.75);
+}
+
+header nav {
+  background-color: #4361EE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav .menu img {
+  width: 5vw;
+  padding: 5vw;
+  margin-top: 2vw;
+}
+header nav .headerlogo img {
+  width: 45vw;
+  padding-top: 2vw;
+}
+header nav .headerlogo h2 {
+  font-weight: 300;
+  font-size: 3vw;
+  color: #FFFFFF;
+  margin-top: 0;
+  text-align: center;
+}
+header nav .navigation a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  display: none;
+}
+header nav .navigation img {
+  width: 7vw;
+  margin-top: 5vw;
+  margin-left: 4vw;
+  margin-right: 0;
+}
+header nav .login button {
+  margin-top: 4vw;
+  padding: 1vw 2vw;
+  border: solid white 2px;
+  border-radius: 5px;
+  background-color: #4361EE;
+  color: #FFFFFF;
+  font-size: 5vw;
+  margin-right: 2vw;
+  margin-left: 0;
+}
+@media (min-width: 800px) {
+  header nav .menu img {
+    width: 4vw;
+    padding: 2vw;
+    margin-top: 3vw;
+  }
+  header nav .headerlogo {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header nav .headerlogo img {
+    width: 25vw;
+    margin: auto;
+    display: block;
+  }
+  header nav .headerlogo h2 {
+    font-size: 1.7vw;
+    text-align: center;
+  }
+  header nav .navigation {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 8vw;
+  }
+  header nav .navigation a {
+    display: inline-block;
+    font-size: 3vw;
+    padding: 1vw;
+    margin-top: 0;
+  }
+  header nav .navigation img {
+    width: 3vw;
+    padding: 2vw;
+    margin: 0;
+    margin-top: 2vw;
+    margin-bottom: -2.5vw;
+  }
+  header nav .login button {
+    font-size: 3vw;
+    border-width: 4px;
+    border-radius: 10px;
+    padding: 1vw 3vw;
+    margin-top: 2vw;
+    padding-bottom: 1.2vw;
+  }
+}
+@media (min-width: 1100px) {
+  header nav .menu img {
+    width: 2vw;
+    margin-top: 1vw;
+    padding: 1vw;
+  }
+  header nav .headerlogo {
+    margin-left: -20vw;
+    margin-top: -1vw;
+  }
+  header nav .headerlogo img {
+    width: 14vw;
+  }
+  header nav .headerlogo h2 {
+    font-size: 0.8vw;
+  }
+  header nav .navigation {
+    margin-left: -25vw;
+    margin-top: -2vw;
+  }
+  header nav .navigation a {
+    font-size: 2vw;
+  }
+  header nav .navigation img {
+    width: 2vw;
+  }
+  header nav .login button {
+    font-size: 2vw;
+    padding: 0.5vw 1.5vw;
+    margin-top: 0.8vw;
+  }
+}
+@media (min-width: 1400px) {
+  header nav .menu img {
+    width: 1.5vw;
+    padding: 1vw;
+    margin-top: 0.8vw;
+  }
+  header nav .headerlogo {
+    margin-left: -40vw;
+  }
+  header nav .headerlogo img {
+    width: 12vw;
+  }
+  header nav .headerlogo h2 {
+    font-size: 0.7vw;
+  }
+  header nav .navigation {
+    margin-top: -2.2vw;
+    margin-left: -40vw;
+  }
+  header nav .navigation a {
+    font-size: 1.4vw;
+  }
+  header nav .navigation img {
+    width: 1.6vw;
+  }
+  header nav .login button {
+    font-size: 1.4vw;
+    padding: 0.1vw 1vw;
+    margin-top: 1vw;
+  }
+}
+
+main .hero .logo {
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding-top: 10vw;
+}
+main .hero h2 {
+  text-align: center;
+  font-size: 3vw;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+main .hero .sw {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding-bottom: 10vw;
+}
+main .fun {
+  padding-top: 1vw;
+  padding-bottom: 8vw;
+  margin: auto;
+  color: #FFFFFF;
+}
+main .fun h2 {
+  text-align: center;
+  font-size: 6vw;
+}
+main .fun h3 {
+  text-align: center;
+  font-size: 4vw;
+  font-weight: 300;
+  margin-top: -3vw;
+  margin-bottom: 8vw;
+}
+main .fun .gridOne {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 4vw 5vw;
+}
+main .fun .gridOne h2 {
+  font-size: 5vw;
+  margin-top: 0;
+}
+main .fun .gridOne h3 {
+  font-size: 4vw;
+  font-weight: 400;
+  margin-top: -3vw;
+}
+main .fun .gridOne img {
+  width: 100%;
+}
+main .fun .gridOne .stats {
+  display: flex;
+  width: 25vw;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: -10vw;
+}
+main .fun .gridOne .stats img {
+  width: 3vw;
+  margin-left: -2vw;
+}
+main .fun .gridOne .stats h4 {
+  font-size: 4vw;
+  font-weight: 300;
+}
+main .fun .buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .fun button {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: solid 2px #FFFFFF;
+  border-radius: 5px;
+  padding: 1vw 3vw;
+  font-size: 4vw;
+  margin: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: "heavy";
+  src: url("../scss/fonts/P22 Underground W01 Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "normal";
+  src: url("../scss/fonts/P22 Johnston Underground Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: auto;
+}
