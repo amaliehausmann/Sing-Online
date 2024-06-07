@@ -1,0 +1,67 @@
+@use '../helpers/mixins';
+@use '../helpers/variables' as *;
+@use '../helpers/placeholders';
+
+.togglemenu{
+    display: none;
+    position: absolute;
+    background-color: $lightBlue;
+    .links{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        a{
+            color: $white;
+            text-decoration: none;
+            font-size: 6vw;
+            padding: 1vw 0 1vw 6vw;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            background-color: $darkestBlue;
+            padding-bottom: 5vw;
+        }
+    }
+
+    @media (min-width: 800px){
+        filter: drop-shadow(1px 1px 15px #0000008c);
+
+        .links{
+            width: 70vw;
+            div{
+                display: flex;
+                flex-direction: row;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
+            }
+            .disable{
+                display: none;
+            }
+
+            a{
+                font-size: 3vw;
+            }
+        }
+    }
+
+    @media (min-width: 1100px){
+        .links{
+            width: 50vw;
+            a{
+                font-size: 2vw;
+            }
+        }
+
+    }
+
+    @media (min-width: 1400px){
+        .links{
+            width: 35vw;
+            a{
+                font-size: 1.5vw;
+                padding: 0.5vw 2vw;
+            }
+        }
+    }
+}

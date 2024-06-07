@@ -10,8 +10,10 @@ header {
         flex-direction: row;
         justify-content: space-between;
         @extend %regularFont;
+        position: relative;
 
         .menu {
+            background-color: $lightBlue;
             img {
                 width: 5vw;
                 padding: 5vw;
@@ -48,6 +50,20 @@ header {
                 margin-top: 5vw;
                 margin-left: 4vw;
                 margin-right: 0;
+                cursor: pointer;
+            }
+
+            .search-bar{
+                @extend %regularFont;
+                font-size: 5vw;
+                display: none;
+                padding: 2vw;
+                position: absolute;
+                width: 50vw;
+                left: 25%;
+                top: 100%;
+                border-radius: 8px;
+                border: solid 2px $purple;
             }
         }
 
@@ -63,6 +79,11 @@ header {
                 font-size: 5vw;
                 margin-right: 2vw;
                 margin-left: 0;
+
+                &:hover{
+                    background-color: $white;
+                    color: $darkBlue;
+                }
             }
         }
 
@@ -108,6 +129,13 @@ header {
                     margin: 0;
                     margin-top: 2vw;
                     margin-bottom: -2.5vw;
+                }
+
+                .search-bar{
+                    font-size: 2vw;
+                    padding: 1.5vw;
+                    width: 40vw;
+                    left: 30%;
                 }
             }
 
@@ -156,6 +184,15 @@ header {
                 img {
                     width: 2vw;
                 }
+
+                .search-bar{
+                    top: 25%;
+                    padding: 0.7vw;
+                    font-size: 1.5vw;
+                    border-radius: 20px;
+                    width: 25vw;
+                    left: 54%;
+                }
             }
 
             .login {
@@ -163,6 +200,7 @@ header {
                     font-size: 2vw;
                     padding: 0.5vw 1.5vw;
                     margin-top: 0.8vw;
+                    border-width: 2px;
                 }
             }
 
@@ -199,13 +237,20 @@ header {
                 img{
                     width: 1.6vw;
                 }
+
+                .search-bar{
+                    font-size: 1.3vw;
+                    padding: 0.5vw;
+                    left: 41%;
+                }
             }
 
             .login{
                 button{
                     font-size: 1.4vw;
-                    padding: 0.1vw 1vw;
+                    padding: 0.3vw 1vw;
                     margin-top: 1vw;
+                    border-width: 3px;
                 }
             }
         }

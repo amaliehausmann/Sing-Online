@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing Online</title>
     <link rel="stylesheet" href="assets/css/scss/main.css">
+    <script src="assets/js/index.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="menu">
-                <img src="assets/images/icons/menu.svg" alt="">
+                <img src="assets/images/icons/menu.svg" id="menuIcon" alt="">
+                <div class="togglemenu" id="togglemenu">
+                    <img src="assets/images/icons/cancel.svg" id="closeMenu" alt="">
+                    <div class="links">
+                        <a class="disable" href="">Explore</a>
+                        <a class="disable" href="">Songbook</a>
+                        <div>
+                        <a  href="">All Artists</a>
+                        <a  href="">All Songs</a>
+                        <a  href="">All Albums</a>
+                </div>
+                    </div>
+                </div>
             </div>
             <div class="headerlogo">
                 <img src="assets/images/logo.svg" alt="">
@@ -21,7 +34,8 @@
             <div class="navigation">
                 <a href="">Explore</a>
                 <a href="">Songbook</a>
-                <img src="assets/images/icons/search white.svg" alt="">
+                <img id="search" src="assets/images/icons/search white.svg" alt="">
+                <input type="text" id="searchbar" class="search-bar" placeholder="Search...">
             </div>
             <div class="login">
                 <button>Login</button>
@@ -112,33 +126,33 @@
                 <div>
                     <img src="assets/images/landing/3 bubbles (4).png" alt="">
                     <h3>Save your favorite picks</h3>
-                    <h4>Heart your favorite songs and keep them forever</h4>
+                    <h4>Heart your favorite songs and keep them forever!</h4>
                 </div>
             </div>
-            </div>
-            <div class="artists">
-                <h2>Trending Artists</h2>
-                <h3>Popular Artists</h3>
-                <div class="gridThree">
-                    <div>
-                        <img src="assets/images/landing/olivia.png" alt="">
-                        <h3>Olivia Rodrigo</h3>
-                    </div>
-                    <div>
-                        <img src="assets/images/landing/sabrina.png" alt="">
-                        <h3>Sabrina Carpenter</h3>
-                    </div>
-                    <div>
-                        <img src="assets/images/landing/doja.png" alt="">
-                        <h3>Doja Cat</h3>
-                    </div>
-                    <div>
-                        <img src="assets/images/landing/styles.png" alt="">
-                        <h3>Harry Styles</h3>
-                    </div>
+        </div>
+        <div class="artists">
+            <h2>Trending Artists</h2>
+            <h3>Popular Artists</h3>
+            <div class="gridThree">
+                <div>
+                    <img src="assets/images/landing/olivia.png" alt="">
+                    <h3>Olivia Rodrigo</h3>
                 </div>
-                <button>Explore More</button>
+                <div>
+                    <img src="assets/images/landing/sabrina.png" alt="">
+                    <h3>Sabrina Carpenter</h3>
+                </div>
+                <div>
+                    <img src="assets/images/landing/doja.png" alt="">
+                    <h3>Doja Cat</h3>
+                </div>
+                <div>
+                    <img src="assets/images/landing/styles.png" alt="">
+                    <h3>Harry Styles</h3>
+                </div>
             </div>
+            <button>Explore More</button>
+        </div>
     </main>
     <footer>
         <p>© 2024 Sing Online, Inc. All Rights Reserved.</p>

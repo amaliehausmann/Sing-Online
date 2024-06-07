@@ -1,4 +1,4 @@
-main .hero, main .fun h3, main .fun h4, main .fun .buttonBox button, main .bubbles, main .artists, main .artists button, footer p, header nav, header nav .headerlogo h2, header nav .login button {
+main .hero, main .fun h3, main .fun h4, main .fun .buttonBox button, main .bubbles, main .artists, main .artists button, footer p, header nav, header nav .headerlogo h2, header nav .navigation .search-bar, header nav .login button {
   font-family: "normal", serif;
 }
 
@@ -35,6 +35,10 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+}
+header nav .menu {
+  background-color: #4895EF;
 }
 header nav .menu img {
   width: 5vw;
@@ -63,6 +67,18 @@ header nav .navigation img {
   margin-top: 5vw;
   margin-left: 4vw;
   margin-right: 0;
+  cursor: pointer;
+}
+header nav .navigation .search-bar {
+  font-size: 5vw;
+  display: none;
+  padding: 2vw;
+  position: absolute;
+  width: 50vw;
+  left: 25%;
+  top: 100%;
+  border-radius: 8px;
+  border: solid 2px #3A0CA3;
 }
 header nav .login button {
   margin-top: 4vw;
@@ -74,6 +90,10 @@ header nav .login button {
   font-size: 5vw;
   margin-right: 2vw;
   margin-left: 0;
+}
+header nav .login button:hover {
+  background-color: #FFFFFF;
+  color: #4361EE;
 }
 @media (min-width: 800px) {
   header nav .menu img {
@@ -112,6 +132,12 @@ header nav .login button {
     margin-top: 2vw;
     margin-bottom: -2.5vw;
   }
+  header nav .navigation .search-bar {
+    font-size: 2vw;
+    padding: 1.5vw;
+    width: 40vw;
+    left: 30%;
+  }
   header nav .login button {
     font-size: 3vw;
     border-width: 4px;
@@ -147,10 +173,19 @@ header nav .login button {
   header nav .navigation img {
     width: 2vw;
   }
+  header nav .navigation .search-bar {
+    top: 25%;
+    padding: 0.7vw;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    width: 25vw;
+    left: 54%;
+  }
   header nav .login button {
     font-size: 2vw;
     padding: 0.5vw 1.5vw;
     margin-top: 0.8vw;
+    border-width: 2px;
   }
 }
 @media (min-width: 1400px) {
@@ -178,10 +213,16 @@ header nav .login button {
   header nav .navigation img {
     width: 1.6vw;
   }
+  header nav .navigation .search-bar {
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    left: 41%;
+  }
   header nav .login button {
     font-size: 1.4vw;
-    padding: 0.1vw 1vw;
+    padding: 0.3vw 1vw;
     margin-top: 1vw;
+    border-width: 3px;
   }
 }
 
@@ -223,6 +264,66 @@ footer p {
   }
   footer p {
     font-size: 1.1vw;
+  }
+}
+
+.togglemenu {
+  display: none;
+  position: absolute;
+  background-color: #4895EF;
+}
+.togglemenu .links {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.togglemenu .links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 6vw;
+  padding: 1vw 0 1vw 6vw;
+}
+.togglemenu .links div {
+  display: flex;
+  flex-direction: column;
+  background-color: #223CB7;
+  padding-bottom: 5vw;
+}
+@media (min-width: 800px) {
+  .togglemenu {
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.5490196078));
+  }
+  .togglemenu .links {
+    width: 70vw;
+  }
+  .togglemenu .links div {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+  .togglemenu .links .disable {
+    display: none;
+  }
+  .togglemenu .links a {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 1100px) {
+  .togglemenu .links {
+    width: 50vw;
+  }
+  .togglemenu .links a {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 1400px) {
+  .togglemenu .links {
+    width: 35vw;
+  }
+  .togglemenu .links a {
+    font-size: 1.5vw;
+    padding: 0.5vw 2vw;
   }
 }
 
@@ -308,6 +409,10 @@ main .fun .buttonBox button {
   margin: auto;
   display: block;
 }
+main .fun .buttonBox button:hover {
+  background-color: #FFFFFF;
+  color: #3A0CA3;
+}
 main .bubbles {
   text-align: center;
   padding: 5vw 0;
@@ -386,6 +491,10 @@ main .artists button {
   font-size: 4vw;
   margin: auto;
   display: block;
+}
+main .artists button:hover {
+  background-color: #FFFFFF;
+  color: #3A0CA3;
 }
 @media (min-width: 800px) {
   main .hero .logo {
@@ -481,6 +590,189 @@ main .artists button {
   }
   main .artists button {
     font-size: 2.5vw;
+  }
+}
+@media (min-width: 1100px) {
+  main .hero .logo {
+    width: 45vw;
+    padding-top: 5vw;
+  }
+  main .hero h2 {
+    font-size: 2vw;
+    margin-top: 0;
+  }
+  main .hero .sw {
+    width: 60vw;
+    padding-bottom: 5vw;
+  }
+  main .fun {
+    padding: 4vw 0;
+  }
+  main .fun h2 {
+    font-size: 3.5vw;
+  }
+  main .fun h3 {
+    font-size: 3vw;
+  }
+  main .fun .gridOne {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    text-align: center;
+    padding: 1vw 5vw;
+    margin: 0;
+    margin-top: -3vw;
+  }
+  main .fun .gridOne h2 {
+    font-size: 2.5vw;
+  }
+  main .fun .gridOne h3 {
+    font-size: 2vw;
+    margin-top: -2vw;
+  }
+  main .fun .gridOne .stats {
+    width: 15vw;
+    text-align: center;
+  }
+  main .fun .gridOne .stats h4 {
+    font-size: 2vw;
+  }
+  main .fun .gridOne .stats img {
+    width: 1.9vw;
+    margin-left: -2.5vw;
+  }
+  main .fun .buttonBox button {
+    font-size: 2vw;
+    border-width: 4px;
+  }
+  main .bubbles {
+    padding: 2vw 0;
+  }
+  main .bubbles h2 {
+    font-size: 3.5vw;
+  }
+  main .bubbles h3 {
+    font-size: 2.2vw;
+  }
+  main .bubbles .gridTwo {
+    gap: 6vw;
+    padding: 2vw 2vw;
+    margin: 2vw 2vw;
+  }
+  main .artists {
+    padding: 4vw 0;
+  }
+  main .artists h2 {
+    font-size: 3.5vw;
+  }
+  main .artists h3 {
+    font-size: 3vw;
+  }
+  main .artists .gridThree {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    text-align: center;
+    padding: 1vw 5vw;
+    margin: 0;
+    margin-top: -3vw;
+  }
+  main .artists .gridThree h3 {
+    font-size: 2vw;
+  }
+  main .artists button {
+    font-size: 2vw;
+    border-width: 4px;
+  }
+}
+@media (min-width: 1400px) {
+  main .hero .logo {
+    width: 30vw;
+    padding-top: 3vw;
+  }
+  main .hero h2 {
+    font-size: 1.5vw;
+  }
+  main .hero .sw {
+    width: 50vw;
+    padding-bottom: 3vw;
+  }
+  main .fun {
+    padding: 3vw 2vw;
+  }
+  main .fun h2 {
+    font-size: 2.5vw;
+  }
+  main .fun h3 {
+    font-size: 2vw;
+    margin-top: -2vw;
+  }
+  main .fun .gridOne {
+    margin-top: -5vw;
+    padding: 1vw 16vw;
+  }
+  main .fun .gridOne h2 {
+    font-size: 1.9vw;
+  }
+  main .fun .gridOne h3 {
+    font-size: 1.5vw;
+    margin-top: -1.5vw;
+  }
+  main .fun .gridOne .stats {
+    margin-top: -9.5vw;
+    width: 10vw;
+  }
+  main .fun .gridOne .stats h4 {
+    font-size: 1.5vw;
+  }
+  main .fun .gridOne .stats img {
+    width: 1.4vw;
+    margin-left: -0.5vw;
+  }
+  main .fun .buttonBox button {
+    font-size: 1.5vw;
+  }
+  main .bubbles h2 {
+    font-size: 2.5vw;
+  }
+  main .bubbles h3 {
+    font-size: 2vw;
+  }
+  main .bubbles .gridTwo {
+    padding: 2vw 14vw;
+    gap: 3vw;
+  }
+  main .bubbles .gridTwo h3 {
+    font-size: 1.5vw;
+  }
+  main .bubbles .gridTwo h4 {
+    font-size: 1.3vw;
+  }
+  main .artists {
+    padding: 2vw 2vw;
+  }
+  main .artists h2 {
+    font-size: 2.5vw;
+  }
+  main .artists h3 {
+    font-size: 2vw;
+    margin-top: -2vw;
+    margin-bottom: 5vw;
+  }
+  main .artists .gridThree {
+    padding: 1vw 16vw;
+  }
+  main .artists .gridThree h3 {
+    font-size: 1.5vw;
+  }
+  main .artists button {
+    font-size: 1.5vw;
   }
 }
 
