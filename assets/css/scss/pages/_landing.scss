@@ -2,9 +2,11 @@
 @use '../helpers/placeholders';
 @use '../helpers/variables' as *;
 @use '../components/header';
+@use '../components/footer';
 
 main{
     .hero{
+        @extend %insetshadowtop;
         @extend %gradientOne;
         @extend %regularFont;
 
@@ -32,11 +34,12 @@ main{
         }
 
         .fun{
-            padding-top: 1vw;
-            padding-bottom: 8vw;
+            padding-top: 2vw;
+            padding-bottom: 12vw;
             margin: auto;
             @extend %gradientTwo;
             color: $white;
+
             h2{
                 @extend %heavyFont;
                 text-align: center;
@@ -93,10 +96,99 @@ main{
                 }
             }
 
-            .buttonBox{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            .buttonBox{            
+                button{
+                background-color: transparent;
+                color: $white;
+                border: solid 2px $white;
+                border-radius: 5px;
+                padding: 1vw 3vw;
+                font-size: 4vw;
+                @extend %regularFont;
+                margin: auto;
+                display: block;
+            }
+            }
+            @extend %insetshadowbottom;
+        }
+
+        .bubbles{
+            @extend %regularFont;
+            text-align: center;
+            padding: 5vw 0;
+
+            h2{
+                @extend%heavyFont;
+                color: $purple;
+                font-size: 6vw;
+                margin-bottom: 1vw;
+            }
+
+            h3{
+                font-size: 3.5vw;
+                font-weight: 400;
+                color: $lightBlue;
+                margin-top: 0;
+
+            }
+
+            .gridTwo{
+                @include Grid(1, 3, 5vw);
+                margin: 4vw 15vw;
+
+                img{
+                    width: 100%;
+                }
+
+                h3{
+                    @extend %heavyFont;
+                    color: $black;
+                    margin-bottom: 0.5vw;
+                }
+
+                h4{
+                    font-weight: 300;
+                    color: $darkGray;
+                    margin-top: 0;
+                }
+
+            }
+        }
+
+        .artists{
+            text-align: center;
+            padding: 4vw;
+            @extend %gradientTwo;
+            color: $white;
+            @extend %regularFont;
+            @extend %insetshadowtop;
+
+            h2{
+                @extend %heavyFont;
+                text-align: center;
+                font-size: 6vw;
+            }
+
+            h3{
+                text-align: center;
+                font-size: 4vw;
+                font-weight: 300;
+                margin-top: -3vw;
+                margin-bottom: 8vw
+            }
+
+            .gridThree{
+                @include Grid(2, 2, 5vw);
+
+                img{
+                    width: 100%;
+                }
+
+                h3{
+                    margin-top: 0;
+                    @extend %heavyFont;
+                    font-size: 4vw;
+                }
             }
 
             button{
@@ -111,4 +203,116 @@ main{
                 display: block;
             }
         }
+
+        @media (min-width: 800px){
+
+            .hero{
+                .logo{
+                    width: 60vw;
+                }
+
+                h2{
+                    font-size: 2.2vw;
+                }
+
+                .sw{
+                    width: 70%;
+                }
+            }
+
+            .fun{
+                padding: 6vw 1vw;
+
+                h2{
+                    font-size: 4vw;
+                }
+
+                h3{
+                    font-size: 3vw;
+                }
+
+                .gridOne{
+                    @include Grid(2, 2, 5vw);
+                    padding: 1vw 10vw;
+
+                    h2{
+                        font-size: 4vw;
+                    }
+                    h3{
+                        font-size: 3vw;
+                    }
+
+                    .stats{
+                        width: 18vw;
+
+                        h4{
+                            font-size: 2.5vw;
+                        }
+
+                        img{
+                            width: 2.3vw;
+                            margin-left: -3vw;
+                        }
+                    }
+                }
+
+                .buttonBox{
+                    button{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+
+            .bubbles{
+                h2{
+                    font-size: 4vw;
+                }
+
+                h3{
+                    font-size: 2.8vw;
+                }
+
+                .gridTwo{
+                    @include Grid(3, 1, 2vw);
+                    margin: 4vw 4vw;
+
+                    h3{
+                        font-size: 2vw;
+                    }
+
+                    h4{
+                        font-size: 2vw;
+                    }
+                }
+            }
+
+            .artists{
+
+                padding: 6vw 1vw;
+
+                h2{
+                    font-size: 4vw;
+                }
+
+                h3{
+                    font-size: 3vw;
+                }
+
+                .gridThree{
+                    @include Grid(2, 2, 5vw);
+                    padding: 1vw 10vw;
+
+                    h3{
+                        margin-bottom: 3vw;
+                    }
+                }
+
+                button{
+                    font-size: 2.5vw;
+                }
+
+            }
+
+        }
+
     }

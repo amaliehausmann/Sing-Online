@@ -5,4 +5,5 @@
     gap: $gap;
     grid-template-columns: repeat($col, 1fr);
     grid-template-rows: repeat($row, 1fr);
+    text-align: center;
 }

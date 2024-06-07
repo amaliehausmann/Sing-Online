@@ -1,0 +1,46 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/placeholders' as *;
+@use '../helpers/variables' as *;
+
+footer{
+    background-color: $darkBlue;
+    @include Grid(3, 1 , 5vw);
+    @extend %boxshadow;
+
+    img{
+        width: 100%;
+    }
+
+    p{
+        @extend %regularFont;
+        color: $white;
+        font-size: 3vw;
+    }
+
+    @media (min-width: 800px){
+
+        p{
+            font-size: 2vw;
+        }
+    }
+
+    @media (min-width: 1100px){
+        padding: 2vw 2vw;
+        gap: 2vw;
+        text-align: center;
+    
+        p{
+            font-size: 1.2vw;
+        }
+    }
+
+    @media (min-width: 1400px){
+        gap: 3vw;
+
+        p{
+            font-size: 1.1vw;
+        }
+    }
+
+
+}
