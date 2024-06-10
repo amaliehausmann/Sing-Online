@@ -1,0 +1,197 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/placeholders';
+@use '../helpers/variables' as *;
+@use '../components/header';
+@use '../components/footer';
+@use '../components/navbar';
+
+main{
+
+    .text{
+        text-align: center;
+        padding: 1vw 8vw;
+        h2{
+            color: $purple;
+            font-size: 8vw;
+        }
+        h3{
+            font-size: 5vw;
+            color: $darkGray;
+            margin-top: -4vw;
+        }
+    }
+
+    .searcher{
+        position: relative;
+        input{
+            padding: 2vw;
+            padding-left: 10vw;
+            width: 80%;
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+            border: solid 2px $darkestBlue;
+
+            &::placeholder{
+                @extend %regularFont;
+                font-size: 3.5vw;
+            }
+        }
+
+        img{
+            width: 5vw;
+            position: absolute;
+            left: 6%;
+            top: 20%;
+        }
+    }
+
+    .gridfour{
+        @include Grid (2, 6, 2vw);
+        @extend %gradientThree;
+        padding: 8vw 4vw;
+        margin: 8vw 0;
+
+        color: $white;
+
+        img{
+            width: 90%;
+        }
+
+        h3{
+            margin-top: 0;
+        }
+
+        h4{
+            margin-top: -3vw;
+        }
+    }
+
+    @media (min-width: 800px){
+        
+        .text{
+            h2{
+                font-size: 5vw;
+            }
+            h3{
+                font-size: 3.5vw;
+                margin-top: -2vw;
+            }
+        }
+
+        .searcher{
+
+            input{
+                width: 70%;
+            }
+
+            img{
+                left: 11%;
+                width: 4vw;
+            }
+        }
+
+        .gridfour{
+            margin: 4vw 0;
+
+            @include Grid(3, 9, 2vw);
+
+            h3{
+                font-size: 2.5vw;
+            }
+
+            h4{
+                margin-top: -1.5vw;
+            }
+        }
+    }
+
+    @media (min-width: 1100px){
+        .text{
+            h2{
+                font-size: 3vw;
+            }
+
+            h3{
+                font-size: 2vw;
+            }
+        }
+
+        .searcher{
+            margin-top: 5vw;
+            input{
+                width: 50%;
+                margin-left: 3vw;
+                padding: 1.5vw;
+                padding-left: 5vw;
+
+                
+            &::placeholder{
+                font-size: 2vw;
+            }
+
+
+            }
+
+            img{
+                width: 3vw;
+                left: 4%;
+            }
+
+
+        }
+
+        .gridfour{
+            @include Grid (5, 5, 2vw);
+            padding: 2vw 2vw;
+            margin-top: 1vw;
+
+            h3{
+                font-size: 1.5vw;
+            }
+
+            h4{
+                font-size: 1.3vw;
+            }
+        }
+    }
+
+    @media (min-width: 1400px){
+
+        .text{
+            h2{
+                font-size: 2.5vw;
+            }
+
+            h3{
+                font-size: 1.5vw;
+                margin-top: -1vw;
+            }
+        }
+
+        .searcher{
+            input{
+                width: 30%;
+                padding: 1vw;
+                padding-left: 4vw;
+                margin-left: 1vw;
+
+                
+            &::placeholder{
+                font-size: 1.4vw;
+            }
+            }
+
+            img{
+                width: 2vw;
+                left: 2%;
+            }
+        }
+
+        .gridfour{
+            padding: 2vw 3vw;
+            margin-top: 1vw;
+            gap: 0.2vw;
+        }
+    }
+}
