@@ -1,0 +1,212 @@
+@use '../helpers/mixins' as *;
+@use '../helpers/placeholders';
+@use '../helpers/variables' as *;
+@use '../components/header';
+@use '../components/footer';
+@use '../components/navbar';
+
+main{
+    @extend %regularFont;
+    .heading{
+        text-align: center;
+        padding: 2vw;
+        h2{
+            @extend %heavyFont;
+            color: $purple;
+            font-size: 7vw;
+        }
+        h3{
+            color: $darkGray;
+            font-size: 4vw;
+        }
+    }
+
+    .containers{
+        overflow-x: auto;
+        @extend %gradientThree;
+        margin: 5vw 0;
+        text-align: center;
+        padding: 0 5vw;
+
+        h2{
+            text-align: left;
+            color: $white;
+        }
+        div{
+            @include Grid(4, 1, 3vw);
+            width: fit-content;
+            div{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    color: $white;
+                    font-size: 4.5vw;
+                    margin-top: 0;
+                }
+
+                h4{
+                    color: $white;
+                    font-weight: 100;
+                    margin-top: -5vw;
+                }
+
+                .stats2{
+                    display: flex;
+                    flex-direction: row;
+                    color: $white;
+                    margin-top: -10vw;
+
+                    h5{
+                        font-size: 3vw;
+                        margin-right: -1vw;
+                    }
+
+                    img{
+                        width: 3vw;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media (min-width: 800px){
+        .heading{
+            padding: 1vw 10vw;
+            h2{
+                font-size: 4vw;
+            }
+
+            h3{
+                font-size: 3vw;
+            }
+        }
+
+        .containers{
+            h2{
+                font-size: 4vw;
+            }
+
+            div{
+                gap: 1vw;
+                div{
+                    h3{
+                        font-size: 3vw;
+                    }
+
+                    h4{
+                        font-size: 2vw;
+                        margin-top: -3vw;
+                    }
+
+                    .stats2{
+                        margin-top: -5vw;
+                        h5{
+                            font-size: 2vw;
+                            margin-right: -0.5vw;
+                        }
+
+                        img{
+                            width: 2vw;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    @media (min-width: 1100px){
+
+        .heading{
+            h2{
+                font-size: 3.5vw;
+            }
+            h3{
+                font-size: 2vw;
+                margin-top: -1vw;
+            }
+        }
+
+        .containers{
+            h2{
+                font-size: 3vw;
+            }
+
+            div{
+                gap: 3vw;
+                div{
+                    h3{
+                        font-size: 2.2vw;
+                        margin-top: -2vw;
+                    }
+
+                    h4{
+                        font-size: 1.8vw;
+                        margin-top: -5vw;
+                    }
+
+                    .stats2{
+                        margin-top: -8vw;
+                        h5{
+                            font-size: 1.8vw;
+                            margin-right: -2vw;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 1400px){
+        .heading{
+            padding: 0.5vw;
+            h2{
+                font-size: 3vw;
+            }
+            h3{
+                font-size: 1.5vw;
+            }
+        }
+
+        .containers{
+            margin: 2vw 0;
+
+            h2{
+                font-size: 2vw;
+            }
+
+            div{
+                gap: 3.5vw;
+                padding: 0 7vw;
+                div{
+                    padding: 0;
+
+                    h3{
+                        font-size: 1.8vw;
+                        margin-top: -2.5vw;
+                    }
+
+                    h4{
+                        font-size: 1.5vw;
+                    }
+
+                    .stats2{
+                        margin-top: -7vw;
+                        gap: 1.5vw;
+                        h5{
+                            font-size: 1.2vw;
+                            margin-right: -1vw;
+                        }
+
+                        img{
+                            width: 1.4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

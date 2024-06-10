@@ -101,7 +101,6 @@ main{
             .buttonBox{            
                 button{
                 background-color: transparent;
-                color: $white;
                 border: solid 2px $white;
                 border-radius: 5px;
                 padding: 1vw 3vw;
@@ -109,7 +108,13 @@ main{
                 @extend %regularFont;
                 margin: auto;
                 display: block;
-
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    &:hover{
+                        color: $purple;
+                    }
+                }
                 &:hover{
                     background-color: $white;
                     color: $purple;
@@ -200,7 +205,6 @@ main{
 
             button{
                 background-color: transparent;
-                color: $white;
                 border: solid 2px $white;
                 border-radius: 5px;
                 padding: 1vw 3vw;
@@ -209,9 +213,17 @@ main{
                 margin: auto;
                 display: block;
 
+                a{
+                    color: $white;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: $purple;
+                    }
+                }
+
                 &:hover{
                     background-color: $white;
-                    color: $purple;
                 }
             }
         }
