@@ -931,20 +931,21 @@ main .containers div div .stats2 img {
     font-size: 1.5vw;
   }
   main .containers {
-    margin: 2vw 0;
+    margin: 3vw 0;
   }
   main .containers h2 {
     font-size: 2vw;
+    padding-left: 14vw;
   }
   main .containers div {
     gap: 3.5vw;
-    padding: 0 7vw;
+    padding: 0 13vw;
   }
   main .containers div div {
     padding: 0;
   }
   main .containers div div h3 {
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     margin-top: -2.5vw;
   }
   main .containers div div h4 {
@@ -960,6 +961,9 @@ main .containers div div .stats2 img {
   }
   main .containers div div .stats2 img {
     width: 1.4vw;
+  }
+  main .containers:nth-child(5) {
+    margin-bottom: 6vw;
   }
 }
 

@@ -172,20 +172,21 @@ main{
         }
 
         .containers{
-            margin: 2vw 0;
+            margin: 3vw 0;
 
             h2{
                 font-size: 2vw;
+                padding-left: 14vw;
             }
 
             div{
                 gap: 3.5vw;
-                padding: 0 7vw;
+                padding: 0 13vw;
                 div{
                     padding: 0;
 
                     h3{
-                        font-size: 1.8vw;
+                        font-size: 1.4vw;
                         margin-top: -2.5vw;
                     }
 
@@ -206,6 +207,10 @@ main{
                         }
                     }
                 }
+            }
+
+            &:nth-child(5){
+                margin-bottom: 6vw;
             }
         }
     }
