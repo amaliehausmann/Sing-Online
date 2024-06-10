@@ -6,6 +6,7 @@
     display: none;
     position: absolute;
     background-color: $lightBlue;
+    z-index: 9999;
     .links{
         width: 100vw;
         display: flex;

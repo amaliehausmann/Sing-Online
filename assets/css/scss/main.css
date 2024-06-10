@@ -280,6 +280,7 @@ footer p {
   display: none;
   position: absolute;
   background-color: #4895EF;
+  z-index: 9999;
 }
 .togglemenu .links {
   width: 100vw;
