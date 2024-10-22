@@ -1,187 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse a vast collection of albums on SingOnline. Sing along to the best tracks from your favorite albums and artists, all in one place."
+    />
+
     <title>Albums</title>
-        <link rel="icon" type="image/png" href="./assets/images/icons/favicon.svg">
-    <link rel="stylesheet" href="assets/css/scss/main.css">
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/icons/favicon.svg"
+    />
+    <link rel="stylesheet" href="assets/css/scss/main.css" />
     <script src="assets/js/index.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="menu">
-                <img src="assets/images/icons/menu.svg" id="menuIcon" alt="">
-                <div class="togglemenu" id="togglemenu">
-                    <img src="assets/images/icons/cancel.svg" id="closeMenu" alt="">
-                    <div class="links">
-                        <a class="disable" href="explore.html">Explore</a>
-                        <a class="disable" href="songbook.html">Songbook</a>
-                        <div>
-                        <a  href="artists.html">All Artists</a>
-                        <a  href="songs.html">All Songs</a>
-                        <a  href="albums.html">All Albums</a>
-                </div>
-                    </div>
-                </div>
+      <nav>
+        <div class="menu">
+          <img
+            src="assets/images/icons/menu.svg"
+            id="menuIcon"
+            alt="menu icon"
+          />
+          <div class="togglemenu" id="togglemenu">
+            <img
+              src="assets/images/icons/cancel.svg"
+              id="closeMenu"
+              alt=" close icon"
+            />
+            <div class="links">
+              <a class="disable" href="explore.html">Explore</a>
+              <a class="disable" href="songbook.html">Songbook</a>
+              <div>
+                <a href="artists.html">All Artists</a>
+                <a href="songs.html">All Songs</a>
+                <a href="albums.html">All Albums</a>
+              </div>
             </div>
-            <div class="headerlogo">
-                <a href="index.html"><img src="assets/images/logo.svg" alt=""></a>
-                <h2>UNLEASH YOUR INNER ROCKSTAR</h2>
-            </div>
-            <div class="navigation">
-                <a href="explore.html">Explore</a>
-                <a href="songbook.html">Songbook</a>
-                <img id="search" src="assets/images/icons/search white.svg" alt="">
-                <input type="text" id="searchbar" class="search-bar" placeholder="Search...">
-            </div>
-            <div class="login">
-                <button>Login</button>
-            </div>
-        </nav>
+          </div>
+        </div>
+        <div class="headerlogo">
+          <a href="index.html"
+            ><img src="assets/images/logo.svg" alt="header logo"
+          /></a>
+          <h2>UNLEASH YOUR INNER ROCKSTAR</h2>
+        </div>
+        <div class="navigation">
+          <a href="explore.html">Explore</a>
+          <a href="songbook.html">Songbook</a>
+          <img
+            id="search"
+            src="assets/images/icons/search white.svg"
+            alt="search icon"
+          />
+          <input
+            type="text"
+            id="searchbar"
+            class="search-bar"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="login">
+          <button>Login</button>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="text">
-            <h2>All Albums</h2>
-            <h3>Search from 500+ thousand albums</h3>
-        </section>
-        <section class="searcher">
-            <img src="assets/images/icons/purpleserach.svg" alt="">
-            <input type="text" placeholder="Search albums by Artist or Title">
-        </section>
-        <section class="gridfour">
-            <div>
-                <img src="assets/images/albums/theeminemshow.png" alt="">
-                <h3>The Eminem Show</h3>
-                <h4>By: Eminem</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/espresso.png" alt="">
-                <h3>Espresso</h3>
-                <h4>By: Sabrina Carpenter</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/houdini.png" alt="">
-                <h3>Houdini</h3>
-                <h4>By: Eminem</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/hitmehardandsoft.png" alt="">
-                <h3>HIT ME HARD AND SOFT</h3>
-                <h4>By: Billie Eilish</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/milliondollarbaby.png" alt="">
-                <h3>MILLION DOLLAR BABY</h3>
-                <h4>By: Tommy Richman</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/colombia.png" alt="">
-                <h3>Colombia</h3>
-                <h4>By: Senhit</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/gataonly.png" alt="">
-                <h3>Gata Only</h3>
-                <h4>By: FloyyMenor</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/ihadsomehelp.png" alt="">
-                <h3>I Had Some Help</h3>
-                <h4>By: Post Malone</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/citylights.png" alt="">
-                <h3>City Lights</h3>
-                <h4>By: Rogé</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/unrealunearth.png" alt="">
-                <h3>Unreal Unearth</h3>
-                <h4>By: Hozier</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/ilikethewayyoukissme.png" alt="">
-                <h3>i like the way you kiss me</h3>
-                <h4>By: Artemas</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/chasingthosetraces.png" alt="">
-                <h3>Chasing Those Traces</h3>
-                <h4>By: Kalu</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/band4band.png" alt="">
-                <h3>BAND4BAND</h3>
-                <h4>By: Central Cee</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/oud.png" alt="">
-                <h3>OUD</h3>
-                <h4>By: A!MS</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/where i've been.png" alt="">
-                <h3>Where I've Been</h3>
-                <h4>By: Shaboozey</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/eternalsunshine.png" alt="">
-                <h3>Eternal Sunshine</h3>
-                <h4>By: Ariana Grande</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/ttpd.png" alt="">
-                <h3>TTDP</h3>
-                <h4>By: Taylor Swift</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/santa.png" alt="">
-                <h3>Santa</h3>
-                <h4>By: Rvssian</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/decide.png" alt="">
-                <h3>DECIDE</h3>
-                <h4>By: Djo</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/stargazing.png" alt="">
-                <h3>Stargazing</h3>
-                <h4>By: Myles Smith</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/ivetriedeverything.png" alt="">
-                <h3>I've Tried Everything</h3>
-                <h4>By: Teddy Swims</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/theidolepisode4.png" alt="">
-                <h3>The Idol Episode 4</h3>
-                <h4>By: The Weeknd</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/goodluckbabe.png" alt="">
-                <h3>Good Luck, Babe!</h3>
-                <h4>By: Chappell Roan</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/pinkskies.png" alt="">
-                <h3>Pink Skies</h3>
-                <h4>By: Zach Bryan</h4>
-            </div>
-            <div>
-                <img src="assets/images/albums/iloveyou.png" alt="">
-                <h3>I Love You.</h3>
-                <h4>By: The Neighbourhood</h4>
-            </div>
-        </section>
+      <section class="text">
+        <h2>All Albums</h2>
+        <h3>Search from 500+ thousand albums</h3>
+      </section>
+      <section class="searcher">
+        <img src="assets/images/icons/purpleserach.svg" alt="search icon" />
+        <input type="text" placeholder="Search albums by Artist or Title" />
+      </section>
+      <section class="gridfour">
+        <div>
+          <img
+            src="assets/images/albums/theeminemshow.png"
+            alt="the eminem show album"
+          />
+          <h3>The Eminem Show</h3>
+          <h4>By: Eminem</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/espresso.png" alt="espresso album" />
+          <h3>Espresso</h3>
+          <h4>By: Sabrina Carpenter</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/houdini.png" alt="houdini album" />
+          <h3>Houdini</h3>
+          <h4>By: Eminem</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/hitmehardandsoft.png"
+            alt="hit me hard and soft album"
+          />
+          <h3>HIT ME HARD AND SOFT</h3>
+          <h4>By: Billie Eilish</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/milliondollarbaby.png"
+            alt="million dollar baby album"
+          />
+          <h3>MILLION DOLLAR BABY</h3>
+          <h4>By: Tommy Richman</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/colombia.png" alt="colombia album" />
+          <h3>Colombia</h3>
+          <h4>By: Senhit</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/gataonly.png" alt="gata only album" />
+          <h3>Gata Only</h3>
+          <h4>By: FloyyMenor</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/ihadsomehelp.png"
+            alt="i had some help album"
+          />
+          <h3>I Had Some Help</h3>
+          <h4>By: Post Malone</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/citylights.png"
+            alt="city lights album"
+          />
+          <h3>City Lights</h3>
+          <h4>By: Rogé</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/unrealunearth.png"
+            alt="unreal unearth album"
+          />
+          <h3>Unreal Unearth</h3>
+          <h4>By: Hozier</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/ilikethewayyoukissme.png"
+            alt="i like the way you kiss me album"
+          />
+          <h3>i like the way you kiss me</h3>
+          <h4>By: Artemas</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/chasingthosetraces.png"
+            alt="chasing those traces album"
+          />
+          <h3>Chasing Those Traces</h3>
+          <h4>By: Kalu</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/band4band.png"
+            alt="band 4 band album"
+          />
+          <h3>BAND4BAND</h3>
+          <h4>By: Central Cee</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/oud.png" alt="oud album" />
+          <h3>OUD</h3>
+          <h4>By: A!MS</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/where i've been.png"
+            alt="where i've been album"
+          />
+          <h3>Where I've Been</h3>
+          <h4>By: Shaboozey</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/eternalsunshine.png"
+            alt="eternal sunshine album"
+          />
+          <h3>Eternal Sunshine</h3>
+          <h4>By: Ariana Grande</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/ttpd.png" alt=" ttdp album" />
+          <h3>TTDP</h3>
+          <h4>By: Taylor Swift</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/santa.png" alt="santa album" />
+          <h3>Santa</h3>
+          <h4>By: Rvssian</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/decide.png" alt="decide album" />
+          <h3>DECIDE</h3>
+          <h4>By: Djo</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/stargazing.png"
+            alt="stargazing album"
+          />
+          <h3>Stargazing</h3>
+          <h4>By: Myles Smith</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/ivetriedeverything.png"
+            alt="i've tried everything album"
+          />
+          <h3>I've Tried Everything</h3>
+          <h4>By: Teddy Swims</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/theidolepisode4.png"
+            alt="the idol episode 4 album"
+          />
+          <h3>The Idol Episode 4</h3>
+          <h4>By: The Weeknd</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/goodluckbabe.png"
+            alt="good luck babe album"
+          />
+          <h3>Good Luck, Babe!</h3>
+          <h4>By: Chappell Roan</h4>
+        </div>
+        <div>
+          <img
+            src="assets/images/albums/pinkskies.png"
+            alt="pink skies album"
+          />
+          <h3>Pink Skies</h3>
+          <h4>By: Zach Bryan</h4>
+        </div>
+        <div>
+          <img src="assets/images/albums/iloveyou.png" alt="i love you album" />
+          <h3>I Love You.</h3>
+          <h4>By: The Neighbourhood</h4>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>© 2024 Sing Online, Inc. All Rights Reserved.</p>
-        <img src="assets/images/logoBlue.svg" alt="">
-        <p>Terms • Privacy • Cookies • Copyright • Acknowledgments</p>
+      <p>© 2024 Sing Online, Inc. All Rights Reserved.</p>
+      <img src="assets/images/logoBlue.svg" alt="site logo" />
+      <p>Terms • Privacy • Cookies • Copyright • Acknowledgments</p>
     </footer>
-</body>
+  </body>
 </html>
